@@ -1,0 +1,164 @@
+[
+    {
+        "id": "selección especial-01",
+        "titulo":"Selección especial 01",
+        "imagen":"../static/img/shop/cafe-envasado_cleanup.jpg",
+        "categoria":{
+            "nombre": "Selección especial",
+            "id": "selección-especial"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "selección especial-02",
+        "titulo":"Selección especial 02",
+        "imagen":"../static/img/shop/cafe-envasado1.jpg",
+        "categoria":{
+            "nombre": "Selección especial",
+            "id": "selección-especial"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "selección especial-03",
+        "titulo":"Selección especial 03",
+        "imagen":"../static/img/shop/cafe-envasado2_cleanup.jpg",
+        "categoria":{
+            "nombre": "Selección especial",
+            "id": "selección-especial"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "selección especial-04",
+        "titulo":"Selección especial 04",
+        "imagen":"../static/img/shop/cafe-envasado3_cleanup.jpg",
+        "categoria":{
+            "nombre": "Selección especial",
+            "id": "selección-especial"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "grano-01",
+        "titulo":"Grano 01",
+        "imagen":"../static/img/shop/cafe-envasado4_cleanup.jpg",
+        "categoria":{
+            "nombre": "Grano",
+            "id": "grano"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "grano-02",
+        "titulo":"Grano 02",
+        "imagen":"../static/img/shop/cafe-envasado5_cleanup.jpg",
+        "categoria":{
+            "nombre": "Grano",
+            "id": "grano"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "grano-03",
+        "titulo":"Grano 03",
+        "imagen":"../static/img/shop/cafe-envasado4_cleanup.jpg",
+        "categoria":{
+            "nombre": "Grano",
+            "id": "grano"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "grano-04",
+        "titulo":"Grano 04",
+        "imagen":"../static/img/shop/cafe-envasado5_cleanup.jpg",
+        "categoria":{
+            "nombre": "Grano",
+            "id": "grano"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "molido-01",
+        "titulo":"Molido 01",
+        "imagen":"../static/img/shop/cafe-molido1_cleanup.jpg",
+        "categoria":{
+            "nombre": "Molido",
+            "id": "molido"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "molido-02",
+        "titulo":"Molido 02",
+        "imagen":"../static/img/shop/cafe-molido2_cleanup.jpg",
+        "categoria":{
+            "nombre": "Molido",
+            "id": "molido"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "molido-03",
+        "titulo":"Molido 03",
+        "imagen":"../static/img/shop/cafe-molido3_cleanup.jpg",
+        "categoria":{
+            "nombre": "Molido",
+            "id": "molido"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "molido-04",
+        "titulo":"Molido 04",
+        "imagen":"../static/img/shop/cafe-molido4_cleanup.jpg",
+        "categoria":{
+            "nombre": "Molido",
+            "id": "molido"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "saquitos-01",
+        "titulo":"Saquitos 01",
+        "imagen":"../static/img/shop/cafe-saquito1.jpg",
+        "categoria":{
+            "nombre": "Saquitos",
+            "id": "saquitos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "saquitos-02",
+        "titulo":"Saquitos 02",
+        "imagen":"../static/img/shop/cafe-saquito2.jpg",
+        "categoria":{
+            "nombre": "Saquitos",
+            "id": "saquitos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "saquitos-03",
+        "titulo":"Saquitos 03",
+        "imagen":"../static/img/shop/cafe-saquito3_cleanup.png",
+        "categoria":{
+            "nombre": "Saquitos",
+            "id": "saquitos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "saquitos-04",
+        "titulo":"Saquitos 04",
+        "imagen":"../static/img/shop/cafe-saquito4_cleanup.jpg",
+        "categoria":{
+            "nombre": "Saquitos",
+            "id": "saquitos"
+        },
+        "precio": 1000
+    }
+]

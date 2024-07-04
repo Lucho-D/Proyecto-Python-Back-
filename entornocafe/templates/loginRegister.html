@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../static/css/loginRegister.css">
+    
+    <title>Coffee Shop | Ecommerce web design</title>
+    <link rel="shortcut icon" href="../static/img/icons8-cafe-32.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Header -->
+<!-- main -->
+<!--Boton volver-->
+<div>
+    <a href="../index.html" class="volver">
+        <i class="fa-regular fa-circle-left"></i>
+    </a>
+</div>
+   <!-- Caja login -->
+   <div class="container-form register">
+    <!-- Bienvenido -->
+   <div class="informacion">
+     <div class="info-childs">
+         <h2>Bienvenido!!</h2>
+         <p>Para uniter a nuestra comunidad ingresa con tus datos y disfruta de nuestros productos</p>
+         <input type="button" value="Iniciar Sesión" id="sign-in">
+         
+     </div>
+   </div>
+   <!-- Crear cuenta -->
+   <div class="form-informacion">
+     <div class="form-informacion-childs">
+         <h2>Registrate!</h2>
+         <div class="icons">
+             <i class='bx bxl-google'></i>
+             <i class='bx bxl-facebook' ></i>
+             <i class='bx bxl-microsoft'></i>
+         
+         </div>
+         <p>o usa tu Email para registarte.</p>
+         <form class="form form-register" novalidate>
+             
+             <div>
+                 <label >
+                     <i class='bx bx-user'></i>
+                     <input type="text" placeholder="Nombre completo" name="userName">
+                 </label>
+                 
+             </div>
+             <div>
+                 <label  >
+                     <i class='bx bx-envelope' ></i>
+                     <input type="email" placeholder="Correo electronico" name="userEmail">
+                 </label>
+             </div>    
+             <div>
+                 <label >
+                     <i class='bx bx-lock-alt'></i>
+                     <input type="password" placeholder="Contarseña" name="userPassword">
+                 </label>
+                 
+             </div>
+             <input type="submit" value="Registrarse">
+             <div class="alerta-error">Todos los campos son obligatorios </div>
+             <div class="alerta-exito">Operación exitosa</div>
+         </form>
+     </div>
+   </div>
+</div>
+<!--segundo-->
+<div class="container-form login hide">
+ <!-- Bienvenido -->
+<div class="informacion">
+  <div class="info-childs">
+      <h2>Bienvenido!!</h2>
+      <p>Para uniter a nuestra comunidad ingresa con tus datos y disfruta de nuestros productos</p>
+      <input type="button" value="Registrarse"   id="sign-up">
+      
+  </div>
+</div>
+<!-- iniciar secion -->
+<div class="form-informacion">
+  <div class="form-informacion-childs">
+      <h2>Iniciar Sesión</h2>
+      <div class="icons">
+          <i class='bx bxl-google'></i>
+          <i class='bx bxl-facebook' ></i>
+          <i class='bx bxl-microsoft'></i>
+      
+      </div>
+      <form class="form form-login" novalidate>
+          <div>
+             <label >
+                 <i class='bx bx-envelope' ></i>
+                 <input type="email" placeholder="Correo electronico" name="userEmail">
+             </label>
+             
+          </div>
+         <div>
+             <label >
+                 <i class='bx bx-lock-alt'></i>
+                 <input type="password" placeholder="Contarseña" name="userPassword">
+             </label>
+             
+         </div>
+          <input type="submit" value="iniciar Sesión">
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Operación exitosa</div>
+      </form>
+  </div>
+</div>
+</div>
+
+
+<!-- footer -->
+ 
+<script src="../static/Js/loginRegister.js"></script>
+<!--<script src="../Js/login.js"></script>-->
+<script src="../static/Js/register.js"></script>
+<script src="../static/Js/iffe_login.js"></script>
+</body>
+</html>

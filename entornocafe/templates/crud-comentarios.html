@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Ecommerce web design</title>
+    <link rel="shortcut icon" href="./static/imgicons8-cafe-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/crud-comentarios.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="">
+                    <img src="../static/img/_2def7ab1-8018-4086-98bc-2c16a9109a59.jfif" alt="">
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="">Coffee Shop</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="./loginRegister.html"><i class="fa-solid fa-user" ></i></a>
+                    <a href="./carrito.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <div class="content-shopping-cart">
+                        <!-- <span class="text">Carrito</span>
+                        <span class="number">(0)</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./shop.html">Tienda</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main> 
+        <section id="form" class="container ">
+            <h2 class="search-title">Gestión de comentarios</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de comentarios del portal</p>
+            <form action="#"  id="form-comment">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="input-search" name="usuario" id="usuario">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="comentario">Comentario</label>
+                        <input type="text" class="input-search" name="comentario" id="comentario">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="release-date">Fecha Publicación</label>
+                        <input type="date" class="input-search" name="release_date" id="release-date">
+                    </div>               
+                    <input type="hidden"  name="id" id="id-comment">
+                    <button class="btn-cac" type="button" id="btn-save-comment">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de comentarios</h3>
+            <table id="list-table-comments" class="table">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Comentario</th>
+                        <th>Fecha de publicación</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-comments">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="lista-footer">
+            <ul>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./loginRegister.html">Registrarse</a></li>
+                <li><a href="./loginRegister.html">Login</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes-footer">
+            <a href="" class="fa-brands fa-pinterest"></a>
+            <a href="" class="fa-brands fa-google"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+            <a href="" class="fa-brands fa-whatsapp"></a>
+        </div>
+        <p>All rights reserved 2024 - Coffee Shop &copy;</p>
+    </footer>
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-comentarios-fetch.js"></script>
+    <script src="../static/Js/index.js"></script>
+</body>
+</html>

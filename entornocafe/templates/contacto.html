@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Ecommerce web design</title>
+    <link rel="shortcut icon" href="../static/img/icons8-cafe-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/contacto.css">
+    <!-- <link rel="stylesheet" href="../static/css/crud-comentarios.css"> -->
+</head>
+
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="">
+                    <img src="../static/img/_2def7ab1-8018-4086-98bc-2c16a9109a59.jfif" alt="">
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="">Coffee Shop</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="./loginRegister.html">
+                        <i class="fa-solid fa-user"></i></a>
+                    <a href="./carrito.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <div class="content-shopping-cart">
+                        <!-- <span class="text">Carrito</span>
+                        <span class="number">(0)</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./shop.html">Tienda</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Main -->
+    
+    <div class="main-Contacto">
+        <div>
+            <article>
+                <h3><b>CONTACTO</b></h3> 
+                
+                <ol>
+                    <li><b>Dirección</b></li>
+                    <hr>
+                    <li>Av. Salvador 2315 - Barrio Palermo</li>
+                    <li>Buenos Aires, Argentina</li>
+                    <br>
+                    <li><b>Teléfono</b></li>
+                    <hr>
+                    <li>(+54) 11 1234-5678</li>
+                    <br>
+                    <li><b>Correo electrónico</b></li>
+                    <hr>
+                    <li>coffeeshop@gmail.com</li>
+                    <br>
+                    <li><b>Horarios de atención</b></li>
+                    <hr>
+                    <li>Lunes: Cerrado</li>
+                    <li>Martes: 9:00 - 20:00</li>
+                    <li>Miércoles: 9:00 - 20</li>
+                    <li>Jueves: 9:00 - 20:00</li>
+                    <li>Viernes: 9:00 - 21:00</li>
+                    <li>Sábado: 10:00 - 22:00</li>
+                    <li>Domingo: 10:00 - 22:00</li>
+                    <li>
+                        <iframe class="iframe" src="https://maps.google.com/?ll=-34.581337,-58.426246&z=14&t=m&output=embed" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </li>
+                </ol>
+            </article>
+        </div>
+    </div>
+
+    <!-- Section -->
+    <div class= "section">
+        <div>
+            <section>
+
+                <h3><b>ENVIANOS TU CONSULTAS</b></h3>
+                <br>
+
+                <form action="#"  id="formulario">
+                    Nombre y apellido:   <input type="text" name="nombre" id="nombre"  size="32" maxlength="100">
+                    <br>
+                    <br>
+                    Dirección de correo:   <input type="text" name="email" id="email" size="31" maxlength="100">
+                    <br>
+                    <br>
+                    Asunto:  <textarea  type="text" cols="63" rows="2" name="asunto" id="asunto"></textarea>
+                    <br>
+                    <br>
+                    Consulta:  <textarea type="text"  cols="61" rows="7" name="consulta" id="consulta"></textarea>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="recibir_info" checked> Deseo recibir notificaciones
+                    <br>
+                    <input type="hidden"  name="id" id="id-contacto">
+                    <input class="btn-cac" type="button" id="btn-save-contacto" value=" Enviar formulario">
+                    <br>
+                    <br>
+                    <input class="reset" type="Reset" value="Borrar todo">
+                </form>
+
+            </section>
+        </div>
+    </div> 
+
+
+    <footer class="footer">
+        <div class="lista-footer">
+            <ul>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./loginRegister.html">Registrarse</a></li>
+                <li><a href="./loginRegister.html">Login</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes-footer">
+            <a href="" class="fa-brands fa-pinterest"></a>
+            <a href="" class="fa-brands fa-google"></a>
+            <a href="" class="fa-brands fa-instagram"></a>
+            <a href="" class="fa-brands fa-whatsapp"></a>
+        </div>
+        <p>All rights reserved 2024 - Coffee Shop &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/Js/contacto.js"></script>
+    <script src="../static/Js/formularioContacto.js"></script>
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+</body>
+</html>
