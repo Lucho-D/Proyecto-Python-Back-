@@ -592,7 +592,12 @@ footer p {
         width: 100%;
         flex-direction: column;
     }
+    .main-Contacto{ 
+        width: 100%;
+        flex-direction:row;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .lista-footer { 
@@ -606,13 +611,13 @@ footer p {
         display: none;
     }
 
-    .main-Contacto{
+    /* .main-Contacto{
         font-size: 90%;
         min-width: 23rem;
         margin-right: 3rem;
         height: auto;
         position: relative;
-    }
+    } */
 
     .menu a {
         font-size: 1rem;
