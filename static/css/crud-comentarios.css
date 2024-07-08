@@ -559,10 +559,7 @@ footer p {    /* cambie Lucho*/
         margin: auto;
         margin-left:1rem ;
     }
-    .container{
-        width: 100%;
-        flex-direction: column;
-    }
+    
 }
 
 @media screen and (max-width: 768px) {

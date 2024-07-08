@@ -270,7 +270,7 @@ article{
 }
 .main-Contacto article{  
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
 }
 .main-Contacto hr{
     width: 100%;
@@ -599,25 +599,27 @@ footer p {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .lista-footer { 
         justify-content: center; 
     }
+
+    section textarea{
+        font-size: 15px;
+        justify-content: center;
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:610px) {
     
     .container-logo{
         display: none;
     }
 
-    /* .main-Contacto{
-        font-size: 90%;
-        min-width: 23rem;
-        margin-right: 3rem;
-        height: auto;
-        position: relative;
-    } */
+    section textarea{
+        font-size: 10.5px;
+        justify-content: center;
+    }
 
     .menu a {
         font-size: 1rem;

@@ -316,7 +316,7 @@ article{
 }
 .main-Contacto article{  
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
 }
 .main-Contacto hr{
     width: 100%;
