@@ -21,11 +21,6 @@ html {
     box-sizing: border-box;
 }
 
-/*--------------------------------------------------------------------*/
-
-/*-Body-*/
-/*--------------------------------------------------------------------*/
-
 body{
     background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
     background-position: center;
@@ -53,20 +48,17 @@ ul {
 a {
     text-decoration: none;
 }
-/* //////////////////////////////////////// UTILITIES ////////////////////////////////////////  */
+
+/*--//////////////////////////--UTILITIES--//////////////////////////////////////--*/
 
 .container {
 	max-width: 120rem;
 	margin: 0 auto;
+    background-color: blue;
 }
 
-.heading-1 {
-	text-align: center;
-	font-weight: 500;
-	font-size: 3rem;
-}
+/*--//////////////////////////--HEADER--//////////////////////////////////////--*/
 
-/* //////////////////////////////////////// HEADER ////////////////////////////////////////  */
 .container-hero {
 	background-color: var(--background-color);
 }
@@ -82,6 +74,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0;
+    background-color: #ff0000;
 }
 
 .customer-support {
@@ -141,7 +134,7 @@ a {
 	flex-direction: column;
 }
 
-/* ///////////// NAVBAR ///////////// */
+/*--//////////////////////////--NAVBAR--//////////////////////////////////////--*/
 
 .container-navbar {
 	background-color: var(--primary-color);
@@ -238,7 +231,8 @@ a {
 	color: #fff;
 }
 
-/* /////////////////////////////////////// BANNER ///////////////////////////////////////  */
+/*--//////////////////////////--BANNER--//////////////////////////////////////--*/
+
 .banner {
 	background-image: linear-gradient(100deg, #000000, #00000020),
 		url('../img/banner.jpg');
@@ -251,27 +245,31 @@ a {
 	max-width: 90rem;
 	margin: 0 auto;
 	padding: 20rem 0;
+    background-color: blueviolet;
 }
 
 .content-banner i {
 	font-size: 7rem;
     color: var(--clr-white);
+    background-color: aqua;
 }
 
 .content-banner h2 {
 	color: #fff;
 	font-size: 5.5rem;
 	font-weight: 500;
-	line-height: 1.7;
     letter-spacing: 1.2rem;
     text-transform: uppercase;
+    background-color: #dd45aa;
 }
 
 .content-banner p {
 	color: var(--clr-white);
 	font-size: 1.8rem;
-	margin-bottom: 1rem;
+    margin-top: 0;
+	/* margin-bottom: 1rem; */
 	font-weight: 500;
+    background-color: #0ab835;
 }
 
 .content-banner a {
@@ -286,7 +284,7 @@ a {
 	text-transform: uppercase;
 	border-radius: 6px;
     border: 3px solid var(--primary-color);
-    line-height: 1.25;
+    /* line-height: 1.25; */
 }
 
 .content-banner a:hover{
@@ -295,16 +293,9 @@ a {
     transition: 0.5s;
 }
 
-/*--------------------------------------------------------------------*/
+/*--//////////////////////////--MAIN--//////////////////////////////////////--*/
 
 .main {
-    width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-}
-.main-2 {  
     width: 1200px;
     margin: auto;
     margin-top: 40px;
@@ -314,16 +305,15 @@ a {
 .main article{    
     text-align: center;
 }
-article{
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    box-shadow: -10px 0 25px -10px #000000;
-    border-radius: 2rem;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--clr-white);
+.main-2 {  
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+
 .main-Contacto { 
     width: 100%;
     margin: auto;
@@ -343,8 +333,18 @@ article{
     margin-top: 30px;
 }
 
-/* ARTICLE */
+/*--//////////////////////////--ARTICLE--//////////////////////////////////////--*/
 
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 25px -10px #000000;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--clr-white);
+}
 article:before{
     content: '';
     width: 100%;
@@ -406,8 +406,8 @@ article img{
 article p, section p {
     text-align: center;
 }
-/*-Aside de los articulos relacionados-*/
-/*--------------------------------------------------------------------*/
+
+/*--//////////////////////////--ASIDE--//////////////////////////////////////--*/
 
 .container-aside aside{
     width: 320px;
@@ -449,8 +449,7 @@ article p, section p {
     transition: 0.5s;
 }
 
-/*-Section, section portafolio y section equipo-*/
-/*--------------------------------------------------------------------*/
+/*--//////////////////////////--SECTION--//////////////////////////////////////--*/
 
 .section {
     width: 1200px;
@@ -517,8 +516,7 @@ section input{
 }
 
 
-/*-Section Comentarios-*/
-/*--------------------------------------------------------------------*/
+/*--//////////////////////////--SECTION COMENTARIOS--//////////////////////////////////////--*/
 
 .main-opiniones{
     width: 100%;
@@ -661,9 +659,7 @@ section input{
     background: #000000;
 }
 
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-/* FOOTER */
+/*--//////////////////////////--FOOTER--//////////////////////////////////////--*/
 
 footer {
 	background-color: #c7a17a;
