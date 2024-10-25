@@ -21,6 +21,38 @@ html {
     box-sizing: border-box;
 }
 
+/*--------------------------------------------------------------------*/
+
+/*-Body-*/
+/*--------------------------------------------------------------------*/
+
+body{
+    background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
 /* //////////////////////////////////////// UTILITIES ////////////////////////////////////////  */
 
 .container {
@@ -41,13 +73,15 @@ html {
 
 .container-hero img{
 	width: 90px;
+    border: 2px solid var(--clr-main);
+    border-radius: 6px;
 }
 
 .hero {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 0;
+	padding: 1rem 0;
 }
 
 .customer-support {
@@ -204,17 +238,6 @@ html {
 	color: #fff;
 }
 
-/*-Body-*/
-/*--------------------------------------------------------------------*/
-
-body{
-    background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 /* /////////////////////////////////////// BANNER ///////////////////////////////////////  */
 .banner {
 	background-image: linear-gradient(100deg, #000000, #00000020),
@@ -227,56 +250,51 @@ body{
 .content-banner {
 	max-width: 90rem;
 	margin: 0 auto;
-	padding: 25rem 0;
+	padding: 20rem 0;
 }
 
-.content-banner p {
-	color: var(--clr-white);
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
-	font-weight: 500;
+.content-banner i {
+	font-size: 7rem;
+    color: var(--clr-white);
 }
 
 .content-banner h2 {
 	color: #fff;
-	font-size: 3.5rem;
+	font-size: 5.5rem;
 	font-weight: 500;
-	line-height: 1.2;
+	line-height: 1.7;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+}
+
+.content-banner p {
+	color: var(--clr-white);
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
 }
 
 .content-banner a {
 	margin-top: 2rem;
 	text-decoration: none;
 	color: #fff;
-	background-color: var(--primary-color);
+	background-color: var(--clr-main);
 	display: inline-block;
-	padding: 1rem 3rem;
+	padding: 2rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 	text-transform: uppercase;
-	border-radius: 3rem;
+	border-radius: 6px;
+    border: 3px solid var(--primary-color);
+    line-height: 1.25;
 }
 
-/*--------------------------------------------------------------------*/
-
-
-h5 {
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 7px;
+.content-banner a:hover{
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    transition: 0.5s;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
 /*--------------------------------------------------------------------*/
 
 .main {
@@ -316,7 +334,6 @@ article{
 }
 .main-Contacto article{  
     text-align: center;
-    /* width: 600px; */
 }
 .main-Contacto hr{
     width: 100%;
@@ -424,9 +441,12 @@ article p, section p {
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
+    border: 3px solid var(--primary-color);
 }
 .container-aside aside button:hover{
-    opacity: 0.9;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    transition: 0.5s;
 }
 
 /*-Section, section portafolio y section equipo-*/
