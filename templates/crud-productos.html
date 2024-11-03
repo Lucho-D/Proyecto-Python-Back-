@@ -15,32 +15,26 @@
                     <img src="../static/img/_2def7ab1-8018-4086-98bc-2c16a9109a59.jfif" alt="">
                 </div>
 
-                <div class="container-logo">
-                    <i class="fa-solid fa-mug-hot"></i>
-                    <h1 class="logo"><a href="">Coffee Shop</a></h1>
-                </div>
-
                 <div class="container-user">
-                    <a href="./loginRegister.html"><i class="fa-solid fa-user" ></i></a>
-                    <a href="./carrito.html">
+                    <a href="./templates/loginRegister.html"><i class="fa-solid fa-user" ></i></a>
+                    <a href="./templates/carrito.html">
                         <i class="fa-solid fa-basket-shopping"></i>
                     </a>
-                    <div class="content-shopping-cart">
-                        <!-- <span class="text">Carrito</span>
-                        <span class="number">(0)</span> -->
-                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container-navbar">
             <nav class="navbar container">
-                <i class="fa-solid fa-bars"></i>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
                 <ul class="menu">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./shop.html">Tienda</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../templates/shop.html">Tienda</a></li>
+                    <li><a href="../templates/nosotros.html">Nosotros</a></li>
+                    <li><a href="../templates/contacto.html">Contacto</a></li>
                 </ul>
 
                 <form class="search-form">
@@ -54,7 +48,7 @@
     </header>
     <!-- Indicar contenido principal de la pagina -->
     <main> 
-        <section id="form" class="container ">
+        <section id="form" class="container2 ">
             <h2 class="search-title">Gestión de productos</h2>
             <p class="description" >En esta sección se podra llevar a cabo la gestión de las productos de coffeeshop</p>
             <form action="#"  id="form-producto">
@@ -80,7 +74,7 @@
                 </div>
             </form> 
         </section>
-        <section id="list" class="container">
+        <section id="list" class="container2">
             <h3 class="subtitle">Listado de productos</h3>
             <table id="list-table-productos" class="table">
                 <thead>

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-	--primary-color: #c7a17a;
+	--primary-color: #B69258;
 	--background-color: #f9f5f0;
-	--dark-color: #151515;
-    --clr-main: #583030;
+	--dark-color: #211B14;
+    --clr-main: #403330;
     --clr-main-light: #583030;
-    --clr-white: #ececec;
+    --clr-white: #ffffff;
     --clr-gray: #9c9c9c;
 }
 
@@ -21,17 +21,40 @@ html {
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* //////////////////////////////////////// UTILITIES ////////////////////////////////////////  */
 
 .container {
 	max-width: 120rem;
 	margin: 0 auto;
-}
-
-.heading-1 {
-	text-align: center;
-	font-weight: 500;
-	font-size: 3rem;
 }
 
 /* //////////////////////////////////////// HEADER ////////////////////////////////////////  */
@@ -41,6 +64,8 @@ html {
 
 .container-hero img{
 	width: 90px;
+    border: 2px solid var(--clr-main);
+    border-radius: 6px;
 }
 
 .hero {
@@ -48,39 +73,6 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 0;
-}
-
-.customer-support {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
-.customer-support i {
-	font-size: 3.3rem;
-}
-
-.content-customer-support {
-	display: flex;
-	flex-direction: column;
-}
-
-.container-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
-
-.container-logo i {
-	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #000;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
 }
 
 .container-user {
@@ -102,12 +94,7 @@ html {
 	padding-left: 1rem;
 }
 
-.content-shopping-cart {
-	display: flex;
-	flex-direction: column;
-}
-
-/* ///////////// NAVBAR ///////////// */
+/*--//////////////////////////--NAVBAR--//////////////////////////////////////--*/
 
 .container-navbar {
 	background-color: var(--primary-color);
@@ -120,8 +107,21 @@ html {
 	padding: 1rem 0;
 }
 
-.navbar .fa-bars {
+.checkbtn {
+    font-size: 25px;
+    color: #fff;
+    /* float: left; */
+    line-height: 60px;
+    cursor: pointer;
+    /* position: fixed; */
+    left: 10px;
+    top: 10px;
 	display: none;
+    z-index: 1000;
+}
+
+#check {
+    display: none;
 }
 
 .menu {
@@ -161,6 +161,10 @@ html {
 
 .menu a:hover {
 	color: #fff;
+}
+
+#check:checked ~ .menu {
+    left: 0;
 }
 
 .search-form {
@@ -204,80 +208,6 @@ html {
 	color: #fff;
 }
 
-/*-Body-*/
-/*--------------------------------------------------------------------*/
-
-body{
-    background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* /////////////////////////////////////// BANNER ///////////////////////////////////////  */
-.banner {
-	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('../img/banner.jpg');
-	height: 60rem;
-	background-size: cover;
-	background-position: center;
-}
-
-.content-banner {
-	max-width: 90rem;
-	margin: 0 auto;
-	padding: 25rem 0;
-}
-
-.content-banner p {
-	color: var(--clr-white);
-	font-size: 1.2rem;
-	margin-bottom: 1rem;
-	font-weight: 500;
-}
-
-.content-banner h2 {
-	color: #fff;
-	font-size: 3.5rem;
-	font-weight: 500;
-	line-height: 1.2;
-}
-
-.content-banner a {
-	margin-top: 2rem;
-	text-decoration: none;
-	color: #fff;
-	background-color: var(--primary-color);
-	display: inline-block;
-	padding: 1rem 3rem;
-	text-transform: uppercase;
-	border-radius: 3rem;
-}
-
-/*--------------------------------------------------------------------*/
-
-
-h5 {
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 7px;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 /* ///////////////////////////////////////////////////////// */
 
 .search-title{
@@ -310,8 +240,10 @@ a {
 }
 
 .form-control label{
+    font-size: 2.3vh;
+    padding: 8px;
+    font-weight: 600;
     color: var(--dark-color);
-    font-size: 1.2vw;
 }
 
 .form-control input {
@@ -445,12 +377,19 @@ section:before{
     background:#583030;
 }
 
+.container2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* FOOTER */
 
 footer {
-	background-color: #c7a17a;
+	background-color: var(--primary-color);
 	padding: 20px;
 	font-size: 1.2em;
     position: relative;
@@ -560,11 +499,74 @@ footer p {    /* cambie Lucho*/
         margin-left:1rem ;
     }
     
+    .search-title, .subtitle{
+        font-size: 3vh;
+        padding: 8px;
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero{
+        padding: 1rem;
+    }
+
+    .navbar{
+        padding: 1rem 2rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        left: -250px;
+        top: 189px;
+        height: 100vh;
+        width: 180px;
+        background-color: var(--primary-color);
+        overflow: auto;
+        transition: left .3s ease;
+    }
+
+    .menu li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .menu li a {
+        display: block;
+    }
+
+    .menu a::after {
+        content: '';
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .menu a:hover::after {
+        opacity: 1;
+    }
+
     .lista-footer {
         justify-content: center; 
+    }
+
+    p {
+        display: none;
     }
 }
 
