@@ -109,17 +109,11 @@ a {
 	padding: 1rem 0;
 }
 
-.navbar .fa-bars {
-	display: none;
-}
-
 .checkbtn {
     font-size: 25px;
     color: #fff;
-    /* float: left; */
     line-height: 60px;
     cursor: pointer;
-    /* position: fixed; */
     left: 10px;
     top: 10px;
 	display: none;
@@ -235,25 +229,21 @@ a {
 .content-banner i {
 	font-size: 7rem;
     color: var(--clr-white);
-    /* background-color: aqua; */
 }
 
-.content-banner h2 {
+.content-banner h1 {
 	color: #fff;
 	font-size: 5.5rem;
 	font-weight: 500;
     letter-spacing: 1.2rem;
     text-transform: uppercase;
-    /* background-color: #dd45aa; */
 }
 
 .content-banner p {
 	color: var(--clr-white);
 	font-size: 1.8rem;
     margin-top: 0;
-	/* margin-bottom: 1rem; */
 	font-weight: 500;
-    /* background-color: #0ab835; */
 }
 
 .content-banner a {
@@ -268,7 +258,6 @@ a {
 	text-transform: uppercase;
 	border-radius: 6px;
     border: 3px solid var(--primary-color);
-    /* line-height: 1.25; */
 }
 
 .content-banner a:hover{
@@ -296,7 +285,6 @@ a {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    /* background-color: #dd45aa; */
 }
 
 .main-Contacto { 
@@ -339,7 +327,7 @@ article:before{
     left: 0;
     background:var(--clr-main-light);
 }
-article h1{
+/* article h1{
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
@@ -358,8 +346,8 @@ article h2{
 }
 article h2{
     color: #583030; 
-}
-article h3{
+} */
+article h1{
     margin-top: 20px;
     font-weight: 500;
     font-size: 36px;
@@ -368,6 +356,7 @@ article h3{
 article p{
     margin-top: 20px;
     font-size: 18px;
+    font-weight: 600;
     color: #000000;
 }
 article hr{
@@ -477,7 +466,7 @@ section:before{
     left: 0;
     background:#583030;
 }
-
+/* 
 section h1{
     margin-top: 20px;
     font-weight: 500;
@@ -493,7 +482,7 @@ section h3 {
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
-}
+} */
 
 section p{
     margin-top: 20px;
@@ -802,12 +791,6 @@ footer p {    /* cambie Lucho*/
         padding: 1rem 2rem;
     }
 
-    .navbar .fa-bars {
-        display: block;
-        color: #ffffff;
-        font-size: 3rem;
-    }
-
     .checkbtn {
         display: block;
     }
@@ -850,6 +833,14 @@ footer p {    /* cambie Lucho*/
         opacity: 1;
     }
 
+    .main-opiniones h3{
+        font-size: 2.5rem;
+    }
+
+    .main-opiniones, .slides {
+        font-size: 1.5rem;
+    }
+
     .lista-footer {
         justify-content: center; 
     }
@@ -870,7 +861,7 @@ footer p {    /* cambie Lucho*/
         display: none;
     }
 
-    .main, .main-2{
+    .main, .main-2, .main-opiniones{
         font-size: 95%;
         min-width: 23rem;
         margin-left: auto;

@@ -82,14 +82,14 @@ a {
 
 .container-user .fa-user {
 	font-size: 3rem;
-	color: var(--primary-color);
+	color: var(--clr-main-light);
 	padding-right: 2.5rem;
 	border-right: 1px solid #e2e2e2;
 }
 
 .container-user .fa-basket-shopping {
 	font-size: 3rem;
-	color: var(--primary-color);
+	color: var(--clr-main-light);
 	padding-left: 1rem;
 }
 
