@@ -216,9 +216,11 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .main article{    
     text-align: center;
 }
+
 article{
     width: 100%;
     padding: 20px;
@@ -227,8 +229,9 @@ article{
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
-    background-color: #9c9c9c;
+    background-color: var(--background-color);
 }
+
 .main-Contacto { 
     width: 1200px;
     margin: auto;
@@ -236,10 +239,12 @@ article{
     display: flex;
     justify-content: center;
 }
+
 .main-Contacto article{  
     text-align: center;
     /* width: 600px; */
 }
+
 .main-Contacto hr{
     width: 100%;
     height: 4px;
@@ -259,71 +264,128 @@ article:before{
     left: 0;
     background:#583030;
 }
+
 article h1{
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
 }
+
 article h1 b{
     color: #583030;
 }
+
 article h1 a{
     color: #000000;
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
 }
+
 article h2{
     color: #000000;  
 }
+
 article h2{
     color: #583030; 
 }
+
 article h3{
     margin-top: 20px;
     font-weight: 500;
     font-size: 36px;
     text-align: center;
 }
+
 article p{
     margin-top: 20px;
     font-size: 18px;
     color: #000000;
 }
+
 article hr{
     color:#583030;
 }
+
 article ol li{
     color:#000000;
     margin: 10px;
     font-size: 16px;
     list-style: none;
 }
+
 article p b{
     color:#583030;
 }
+
 article img{
     width: 100%;
     height: 600px;
     margin-top: 20px;
     border-radius: 10px;
 }
+
 article p, section p {
     text-align: center;
 }
+
 /* SECTION */
 
+.section1 {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 25px -10px #000000;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: -1; 
+}
+
+.section1:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-main-light);
+}
+
+.section1 section{
+    background-color: var(--background-color);
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .section {
-    width: 1200px;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+
 .section div {
     margin-bottom: 10px;
 }
+
 .section article hr {
     width: 100%;
     height: 4px;
@@ -331,8 +393,11 @@ article p, section p {
     background: #583030;
     margin-top: 30px;
 }
+
 section{
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     padding-bottom: 40px;
     box-shadow: -10px 0 25px -10px #000000;
@@ -342,6 +407,7 @@ section{
     background-color: var(--clr-gray);
     text-align: center;
 }
+
 section:before{
     content: '';
     width: 100%;
@@ -349,36 +415,43 @@ section:before{
     position: absolute;
     top: 0;
     left: 0;
-    background:#583030;
+    background:var(--clr-main-light);
 }
+
 section h1{
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
     text-align: center;
 }
+
 section h1 b{
-    color: #583030;
+    color: var(--clr-main-light);
 }
+
 section h3 {
     margin-top: 20px;
     font-weight: 500;
     font-size: 36px;
 }
+
 section p{
     margin-top: 20px;
     font-size: 16px;
     color: #000000;
 }
+
 section img{
     width: 100%;
     height: 600px;
     margin-top: 20px;
 }
+
 section form{
     font-size: 20px;
     text-align: center;
 }
+
 section input{
     font-size: 20px;
     justify-content: center;
@@ -402,7 +475,6 @@ section textarea{
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
-
 
 .reset{
     border: 0;
@@ -542,15 +614,19 @@ footer p {
         margin-left:1rem ;
     }
     .section{ 
-        width: 100%;
+        width: 95%;
         flex-direction: column;
     }
     .main-Contacto{ 
         width: 100%;
         flex-direction:row;
     }
-}
 
+    section textarea {
+        font-size: 15px;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -580,7 +656,6 @@ footer p {
         background-color: var(--primary-color);
         overflow: auto;
         transition: left .3s ease;
-        z-index: 1; 
     }
 
     .menu li {
@@ -589,7 +664,7 @@ footer p {
     }
 
     .menu li a {
-        display: block;
+        display: inline-block;
     }
 
     .menu a::after {
@@ -615,12 +690,12 @@ footer p {
     }
 
     section textarea{
-        font-size: 15px;
+        font-size: 13px;
         justify-content: center;
     }
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width:630px) {
     
     .container-logo{
         display: none;
@@ -632,6 +707,6 @@ footer p {
     }
 
     .menu a {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }

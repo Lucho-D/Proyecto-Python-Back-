@@ -210,6 +210,37 @@ a {
 
 /*--//////////////////////////--SHOP--//////////////////////////////////////--*/
 
+
+.section{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 25px -10px #000000;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: -1; 
+}
+
+.section {
+    background-image: url(../img/shop/granos-cafe-tostados-primer-plano_23-2148337235.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#583030;
+}
+
 .wrapper {
     display: grid;
     max-width: 120rem;
@@ -600,7 +631,6 @@ footer p {
         background-color: var(--primary-color);
         overflow: auto;
         transition: left .3s ease;
-        z-index: 1; 
     }
 
     .menu li {
@@ -609,7 +639,7 @@ footer p {
     }
 
     .menu li a {
-        display: block;
+        display: inline-block;
     }
 
     .menu a::after {
@@ -698,8 +728,9 @@ footer p {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
+
     .menu a {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }
 

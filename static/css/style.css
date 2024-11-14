@@ -327,26 +327,7 @@ article:before{
     left: 0;
     background:var(--clr-main-light);
 }
-/* article h1{
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 40px;
-}
-article h1 b{
-    color: #583030;
-}
-article h1 a{
-    color: #000000;
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 40px;
-}
-article h2{
-    color: #000000;  
-}
-article h2{
-    color: #583030; 
-} */
+
 article h1{
     margin-top: 20px;
     font-weight: 500;
@@ -376,7 +357,7 @@ article p b{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* ajusta el ancho según necesites */
+    width: 100%; 
     padding: 3px;
     border-radius: 10px;
     margin-top: 20px;
@@ -466,23 +447,6 @@ section:before{
     left: 0;
     background:#583030;
 }
-/* 
-section h1{
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
-}
-
-section h1 b{
-    color: #583030;
-}
-
-section h3 {
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 40px;
-} */
 
 section p{
     margin-top: 20px;
@@ -813,7 +777,7 @@ footer p {    /* cambie Lucho*/
     }
 
     .menu li a {
-        display: block;
+        display: inline-block;
     }
 
     .menu a::after {
@@ -871,7 +835,7 @@ footer p {    /* cambie Lucho*/
     }
 
     .menu a {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     .main-Contacto {
@@ -887,5 +851,13 @@ footer p {    /* cambie Lucho*/
     article {
         width: 100%;
         flex-direction: column;
+    }
+
+    article p {
+        font-size: 1.8rem;
+    }
+
+    article ol li {
+        font-size: 1.7rem;
     }
 }
