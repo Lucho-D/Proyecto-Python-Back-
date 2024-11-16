@@ -211,7 +211,7 @@ a {
 /* ///////////////////////////////////////////////////////// */
 
 main {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -599,5 +599,14 @@ footer p {    /* cambie Lucho*/
 
     .menu a {
         font-size: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+
+    .form-control input{
+        width: 200px;
+        height: 30px;
     }
 }
