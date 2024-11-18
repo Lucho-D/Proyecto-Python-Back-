@@ -64,7 +64,7 @@ a {
 }
 
 .container-hero img{
-	width: 90px;
+    width: 90px;
     border: 2px solid var(--clr-main);
     border-radius: 6px;
 }
@@ -74,7 +74,6 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0;
-    /* background-color: #ff0000; */
 }
 
 .container-user {
@@ -95,6 +94,7 @@ a {
 	color: var(--clr-main-light);
 	padding-left: 1rem;
 }
+
 
 /*--//////////////////////////--NAVBAR--//////////////////////////////////////--*/
 
@@ -246,7 +246,7 @@ a {
 	font-weight: 500;
 }
 
-.content-banner a {
+.content-banner a button {
 	margin-top: 2rem;
 	text-decoration: none;
 	color: var(--primary-color);
@@ -260,7 +260,7 @@ a {
     border: 3px solid var(--primary-color);
 }
 
-.content-banner a:hover{
+.content-banner a button:hover{
     background-color: var(--primary-color);
     color: var(--dark-color);
     transition: 0.5s;

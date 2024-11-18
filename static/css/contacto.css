@@ -233,18 +233,18 @@ article{
 }
 
 .main-Contacto { 
-    width: 1200px;
+    width: 100%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: -1; 
 }
-
 .main-Contacto article{  
     text-align: center;
-    /* width: 600px; */
 }
-
 .main-Contacto hr{
     width: 100%;
     height: 4px;
@@ -252,6 +252,7 @@ article{
     background: #583030;
     margin-top: 30px;
 }
+
 
 /* ARTICLE */
 
@@ -333,15 +334,12 @@ article p, section p {
 
 .section1 {
     width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    /* box-shadow: -10px 0 25px -10px #000000; */
-    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
-    text-align: center;
     z-index: -1; 
 }
 
@@ -397,15 +395,14 @@ article p, section p {
 }
 
 section{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     padding: 20px;
     padding-bottom: 40px;
     box-shadow: -10px 0 25px -10px #000000;
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
+    background-color: var(--background-color);
     background-color: var(--clr-gray);
     text-align: center;
 }
@@ -692,6 +689,10 @@ footer p {
         opacity: 1;
     }
 
+    .main-Contacto article{
+        width: 650px;
+        flex-direction: column;
+    }
 
     .lista-footer { 
         justify-content: center; 
@@ -714,6 +715,16 @@ footer p {
 
     article li {
         font-size: 5px;
+    }
+
+    .main-Contacto {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .main-Contacto article {
+        width: 100%;
+        flex-direction: column;
     }
 
     section h3 {
@@ -771,7 +782,7 @@ footer p {
     }
     
     section textarea{
-        font-size: 7px;
+        font-size: 6.3px;
         justify-content: center;
     }
 }

@@ -111,10 +111,8 @@ a {
 .checkbtn {
     font-size: 25px;
     color: #fff;
-    /* float: left; */
     line-height: 60px;
     cursor: pointer;
-    /* position: fixed; */
     left: 10px;
     top: 10px;
 	display: none;
