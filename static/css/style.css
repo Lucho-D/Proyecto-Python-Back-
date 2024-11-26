@@ -54,10 +54,18 @@ a {
 .container {
 	max-width: 120rem;
 	margin: 0 auto;
-    /* background-color: blue; */
 }
 
 /*--//////////////////////////--HEADER--//////////////////////////////////////--*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+}
 
 .container-hero {
 	background-color: var(--background-color);
@@ -117,7 +125,7 @@ a {
     left: 10px;
     top: 10px;
 	display: none;
-    z-index: 1000;
+    z-index: 1;
 }
 
 #check {
@@ -216,14 +224,14 @@ a {
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
-    z-index: -1; 
+    margin-top: 13.5%;
 }
 
 .content-banner {
 	max-width: 90rem;
 	margin: 0 auto;
 	padding: 20rem 0;
-    /* background-color: blueviolet; */
+    position: sticky;
 }
 
 .content-banner i {
@@ -246,7 +254,7 @@ a {
 	font-weight: 500;
 }
 
-.content-banner a button {
+.content-banner a {
 	margin-top: 2rem;
 	text-decoration: none;
 	color: var(--primary-color);
@@ -260,7 +268,7 @@ a {
     border: 3px solid var(--primary-color);
 }
 
-.content-banner a button:hover{
+.content-banner a:hover{
     background-color: var(--primary-color);
     color: var(--dark-color);
     transition: 0.5s;
@@ -430,14 +438,14 @@ section{
     width: 100%;
     padding: 20px;
     padding-bottom: 40px;
-    box-shadow: -10px 0 25px -10px #000000;
+    /* box-shadow: -10px 0 25px -10px #000000; */
     border-radius: 6px;
     position: relative;
     overflow: hidden;
     background-color: var(--clr-white);
     text-align: center;
 }
-
+/* 
 section:before{
     content: '';
     width: 100%;
@@ -446,7 +454,7 @@ section:before{
     top: 0;
     left: 0;
     background:#583030;
-}
+} */
 
 section p{
     margin-top: 20px;
@@ -770,6 +778,7 @@ footer p {    /* cambie Lucho*/
         background-color: var(--primary-color);
         overflow: auto;
         transition: left .3s ease;
+        z-index: 2;
     }
 
     .menu li {
@@ -798,9 +807,18 @@ footer p {    /* cambie Lucho*/
         opacity: 1;
     }
 
-    .lista-footer {
+    .lista-footer { 
         justify-content: center; 
     }
+
+    .banner {
+        margin-top: 30%;
+    }
+
+    .content-banner {
+        position: relative;
+    }
+
     .container-aside {
         flex-wrap: wrap;
     }
@@ -816,6 +834,10 @@ footer p {    /* cambie Lucho*/
     
     .container-logo{
         display: none;
+    }
+
+    .banner {
+        margin-top: 35%;
     }
 
     .main, .main-2, .main-opiniones{

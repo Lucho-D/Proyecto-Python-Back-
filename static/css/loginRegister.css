@@ -1,3 +1,13 @@
+:root {
+	--primary-color: #B69258;
+	--background-color: #f9f5f0;
+	--dark-color: #211B14;
+    --clr-main: #403330;
+    --clr-main-light: #583030;
+    --clr-white: #ffffff;
+    --clr-gray: #9c9c9c;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +41,7 @@ body{
     display: flex;
     align-self: center;
     text-align: center;
-    background-color: #c7a17a;
+    background-color: var(--primary-color);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -57,14 +67,14 @@ body{
     border: solid 2px #583030;
     border-radius: 20px;
     padding: 10px 20px;
-    color: #fff;
+    color: var(--clr-white);
     cursor: pointer;
     transition: background-color .3s ease;
 }
 .info-childs input:hover{
     background-color: #583030;
     border: none;
-    color: #fff;
+    color: var(--clr-white);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
 }
 
@@ -75,7 +85,7 @@ body{
     justify-content: center;
     width: 60%;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -100,14 +110,14 @@ body{
     padding: 15px;
     cursor: pointer;
     margin: 0 10px;
-    color: #c7a17a;
-    border: solid thin #c7a17a;
+    color: var(--primary-color);
+    border: solid thin var(--primary-color);
     transition: background-color 0.3s ease;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
 }
 .icons i:hover{
-    background-color: #c7a17a;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--clr-white);
 }
 .form {
     margin: 30px 0;
@@ -118,23 +128,23 @@ body{
     margin-bottom: 15px;
     border-radius: 20px;
     padding: 0 10px;
-    background-color: #fff;
+    background-color: var(--clr-white);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
 }
 .form label input{
     width: 100%;
     padding: 10px;
-    background-color: #fff;
+    background-color: var(--clr-white);
     border: none;
     outline: none;
     border: radius 20px;
     color: #333;
 }
 .form label i{
-    color: #a7a7a7;
+    color: var(--clr-gray);
 }
 .form input[type="submit"]{
-    background-color: #c7a17a;
+    background-color: var(--primary-color);
     color: #fff;
     border-radius: 20px;
     border: none;
@@ -190,6 +200,7 @@ body{
 .form .error{
     outline: solid 2px #9d2222;
 }
+
 /*Boton Volver*/
 .volver{
     width: 100px;
@@ -197,17 +208,19 @@ body{
     position: fixed;
     left: 18px;
     text-align: center;
-    font-size: 40px;
-    color: rgb(57, 6, 6);
+    font-size: 40px;color: var(--primary-color);
+	background-color: var(--clr-main);
     line-height: 100px;
     border-radius: 50%;
-    background-color: #bf9b9b;
+    border: 2px solid var(--primary-color);
     bottom: 50%;
+    line-height: 100px; /* Centra verticalmente */
     animation-duration: 2s;
     animation-name: volver;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
 @keyframes volver{
     0%{
         opacity: 0;
@@ -217,37 +230,70 @@ body{
     }
 }
 
-
-
-
-
-
 /*Responsive*/
 @media screen and (max-width:1150px) {
     html{
         font-size: 12px;
-    }  
+    }
+    
     .volver{
         position: fixed;
-        top: 0%;
+        top: 3%;
+        width: 65px; /* Tamaño más pequeño en responsive */
+        height: 65px;
+        font-size: 35px;
     } 
+
+    .volver i {
+        position: relative; /* Permite ajustar la posición del ícono */
+        top: -27%; /* Resetea los ajustes si se usaron antes */
+        left: 0;
+        transform: none; /* Elimina transformaciones previas */
+    }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:850px) {
     html{
         font-size: 12px;
-    }   
+    }  
+    
+    .volver {
+        width: 50px; /* Tamaño más pequeño en responsive */
+        height: 50px;
+        position: fixed;
+        left: 4px; /* Ajustar la posición para mantenerlo visible */
+        font-size: 20px; /* Tamaño del ícono */
+        border-radius: 50%; /* Forma circular */
+        top: 1%; /* Posición desde la parte inferior */
+        text-align: center;
+        line-height: 50px; /* Alineación vertical del ícono */
+    }
+
+    .volver i {
+        position: relative; /* Permite ajustar la posición del ícono */
+        top: -3%; /* Resetea los ajustes si se usaron antes */
+        left: 0;
+        transform: none; /* Elimina transformaciones previas */
+    }
 }
 
 @media screen and (max-width:580px) {
     html{
         font-size: 15px;
-    }   
+    }
+
     .container-form {
-        height: auto;
+        height: 77%;
         flex-direction: column;
     }
-   
     
+    .info-childs {
+        padding: 20px 0; /* Reduce el relleno superior e inferior */
+    }
+
+    .info-childs h2 {
+        margin-top: 15px; /* Reduce el margen superior del título */
+    }
+
     .informacion{
         width: 100%;
         padding: 20px;
@@ -256,6 +302,7 @@ body{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
+
     .form-informacion{
         width: 100%;
         padding: 20px;

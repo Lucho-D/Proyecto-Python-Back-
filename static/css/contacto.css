@@ -57,6 +57,16 @@ a {
 }
 
 /* //////////////////////////////////////// HEADER ////////////////////////////////////////  */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+}
+
 .container-hero {
 	background-color: var(--background-color);
 }
@@ -109,10 +119,8 @@ a {
 .checkbtn {
     font-size: 25px;
     color: #fff;
-    /* float: left; */
     line-height: 60px;
     cursor: pointer;
-    /* position: fixed; */
     left: 10px;
     top: 10px;
 	display: none;
@@ -235,12 +243,11 @@ article{
 .main-Contacto { 
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 14%;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: -1; 
 }
 .main-Contacto article{  
     text-align: center;
@@ -335,23 +342,13 @@ article p, section p {
 .section1 {
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 14%;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     position: relative;
     z-index: -1; 
 }
-
-/* .section1:before {
-    content: '';
-    width: 100%;
-    height: 6px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--clr-main-light);
-} */
 
 .section1 section{
     background-color: var(--background-color);
@@ -497,7 +494,7 @@ section textarea{
 
 
 footer {
-	background-color: #c7a17a;
+	background-color: var(--primary-color);
 	padding: 20px;
 	font-size: 1.2em;
     position: relative;
@@ -620,11 +617,13 @@ footer p {
     .section1{
         width: 95%;
         flex-direction: column;
+        margin-top: 20%;
     }
 
     .main-Contacto{ 
         width: 90%;
         flex-direction:row;
+        margin-top: 20%;
     }
 
     section textarea {
@@ -661,6 +660,7 @@ footer p {
         background-color: var(--primary-color);
         overflow: auto;
         transition: left .3s ease;
+        z-index: 2;
     }
 
     .menu li {
@@ -689,9 +689,21 @@ footer p {
         opacity: 1;
     }
 
+    .section1{
+        margin-top: 30%;
+    }
+
+    .main-Contacto {
+        margin-top: 30%;
+    }
+
     .main-Contacto article{
         width: 650px;
         flex-direction: column;
+    }
+
+    article iframe{
+        width: 100%;
     }
 
     .lista-footer { 
@@ -717,9 +729,14 @@ footer p {
         font-size: 5px;
     }
 
+    .section1{
+        margin-top: 35%;
+    }
+
     .main-Contacto {
         width: 95%;
         flex-direction: column;
+        margin-top: 35%;
     }
 
     .main-Contacto article {
@@ -752,6 +769,14 @@ footer p {
 }
 
 @media screen and (max-width:450px) {
+    
+    .main-Contacto {
+        margin-top: 60%;
+    } 
+
+    .section1{
+        margin-top: 60%;
+    }
 
     section form{
         font-size: 15px;

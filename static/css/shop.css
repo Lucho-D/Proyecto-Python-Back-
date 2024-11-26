@@ -59,6 +59,15 @@ a {
 
 /*--//////////////////////////--HEADER--//////////////////////////////////////--*/
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+}
+
 .container-hero {
 	background-color: var(--background-color);
 }
@@ -213,7 +222,7 @@ a {
     display: grid;
     max-width: 120rem;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 14%;
     margin-bottom: 5px;
     border-radius: 2rem;
     justify-content: center;
@@ -568,6 +577,7 @@ footer p {
     
     .wrapper {
         width: 95%;
+        margin-top: 20%;
     }
 
 }
@@ -575,6 +585,10 @@ footer p {
 @media screen and (max-width: 768px) {
     html {
         font-size: 55%;
+    }
+
+    .wrapper {
+        margin-top: 30%;
     }
 
     .hero{
@@ -634,6 +648,11 @@ footer p {
 
 
 @media screen and (max-width:675px) {
+
+    .wrapper {
+        margin-top: 35%;
+    }
+
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
     }
@@ -708,6 +727,7 @@ footer p {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin-top: 60%;
     }
 
     .contenedor-productos {
@@ -721,6 +741,5 @@ footer p {
 
     main {
         font-size: 150%;
-        /* margin-right: 3rem; */
     }
 }
