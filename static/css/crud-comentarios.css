@@ -515,7 +515,7 @@ footer p {
     }
 
     main {
-        margin-top: 20%;
+        margin-top: 25%;
     }
 }
 
@@ -576,7 +576,7 @@ footer p {
     }
 
     main {
-        margin-top: 30%;
+        margin-top: 35%;
     }
 
     .table th, td {
@@ -614,7 +614,13 @@ footer p {
     }
 
     main {
-        margin-top: 35%;
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    main {
+        margin-top: 45%;
     }
 }
 
